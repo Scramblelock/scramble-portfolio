@@ -15,4 +15,7 @@ export default defineConfig({
       '/api': 'https://portfolio-api-beta.vercel.app',
     },
   },
+  build: {
+    outDir: 'dist',
+  },
 })
