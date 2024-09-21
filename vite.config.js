@@ -17,5 +17,10 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
+    assetsDir: 'assets', // Directory for static assets
+    rollupOptions: {
+      input: './index.html', // Ensure correct entry point
+    },
+    base: './',
   },
 })
